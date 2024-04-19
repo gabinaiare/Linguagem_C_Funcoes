@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<locale.h>
+
+void zerou (int z); //Protótipo da função
+
+int main(){
+	setlocale(LC_ALL, "Portuguese");
+	int n;
+	
+	printf("Ditite um número inteiro: ");
+	scanf("%i", &n);
+	
+	zerou(n); //Chamada da função e uso o n como argumento, ou seja, o valor de n irá para o parâmetro z
+	
+	return(0);
+}
+
+void zerou (int z){ //Função para verificar se o número inteiro digitado é zero
+	if(z == 0){
+		printf("Zerou!");
+	}
+	else{
+		printf("Não zerou!");
+	}
+}
